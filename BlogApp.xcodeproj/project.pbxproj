@@ -3,23 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3D2F242A26D51CD5002BD21A /* BlogAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2F242926D51CD5002BD21A /* BlogAppApp.swift */; };
-		3D2F242C26D51CD5002BD21A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2F242B26D51CD5002BD21A /* ContentView.swift */; };
 		3D2F242E26D51CDD002BD21A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D2F242D26D51CDD002BD21A /* Assets.xcassets */; };
 		3D2F243126D51CDD002BD21A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D2F243026D51CDD002BD21A /* Preview Assets.xcassets */; };
+		3D2FF70126D562A900011CC1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2FF70026D562A900011CC1 /* Post.swift */; };
+		3D72F45526D846C0006E98BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D72F45426D846C0006E98BD /* ContentView.swift */; };
+		3D72F45826D849B7006E98BD /* HideableTopView in Frameworks */ = {isa = PBXBuildFile; productRef = 3D72F45726D849B7006E98BD /* HideableTopView */; };
+		3D72F45A26D8504E006E98BD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3D72F45926D8504E006E98BD /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3D2F242626D51CD5002BD21A /* BlogApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlogApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D2F242926D51CD5002BD21A /* BlogAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogAppApp.swift; sourceTree = "<group>"; };
-		3D2F242B26D51CD5002BD21A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3D2F242D26D51CDD002BD21A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D2F243026D51CDD002BD21A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3D2F243226D51CDD002BD21A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D2FF70026D562A900011CC1 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		3D72F45426D846C0006E98BD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3D72F45926D8504E006E98BD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D72F45826D849B7006E98BD /* HideableTopView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,6 +42,7 @@
 		3D2F241D26D51CD5002BD21A = {
 			isa = PBXGroup;
 			children = (
+				3D72F45926D8504E006E98BD /* README.md */,
 				3D2F242826D51CD5002BD21A /* BlogApp */,
 				3D2F242726D51CD5002BD21A /* Products */,
 			);
@@ -52,8 +59,9 @@
 		3D2F242826D51CD5002BD21A /* BlogApp */ = {
 			isa = PBXGroup;
 			children = (
+				3D2FF6FF26D5629800011CC1 /* Model */,
 				3D2F242926D51CD5002BD21A /* BlogAppApp.swift */,
-				3D2F242B26D51CD5002BD21A /* ContentView.swift */,
+				3D72F45426D846C0006E98BD /* ContentView.swift */,
 				3D2F242D26D51CDD002BD21A /* Assets.xcassets */,
 				3D2F243226D51CDD002BD21A /* Info.plist */,
 				3D2F242F26D51CDD002BD21A /* Preview Content */,
@@ -67,6 +75,14 @@
 				3D2F243026D51CDD002BD21A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3D2FF6FF26D5629800011CC1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D2FF70026D562A900011CC1 /* Post.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +101,9 @@
 			dependencies = (
 			);
 			name = BlogApp;
+			packageProductDependencies = (
+				3D72F45726D849B7006E98BD /* HideableTopView */,
+			);
 			productName = BlogApp;
 			productReference = 3D2F242626D51CD5002BD21A /* BlogApp.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +131,9 @@
 				Base,
 			);
 			mainGroup = 3D2F241D26D51CD5002BD21A;
+			packageReferences = (
+				3D72F45626D849B7006E98BD /* XCRemoteSwiftPackageReference "HideableTopView" */,
+			);
 			productRefGroup = 3D2F242726D51CD5002BD21A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +148,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D72F45A26D8504E006E98BD /* README.md in Resources */,
 				3D2F243126D51CDD002BD21A /* Preview Assets.xcassets in Resources */,
 				3D2F242E26D51CDD002BD21A /* Assets.xcassets in Resources */,
 			);
@@ -138,7 +161,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D2F242C26D51CD5002BD21A /* ContentView.swift in Sources */,
+				3D2FF70126D562A900011CC1 /* Post.swift in Sources */,
+				3D72F45526D846C0006E98BD /* ContentView.swift in Sources */,
 				3D2F242A26D51CD5002BD21A /* BlogAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,6 +350,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3D72F45626D849B7006E98BD /* XCRemoteSwiftPackageReference "HideableTopView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:rphlfc/HideableTopView.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3D72F45726D849B7006E98BD /* HideableTopView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D72F45626D849B7006E98BD /* XCRemoteSwiftPackageReference "HideableTopView" */;
+			productName = HideableTopView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3D2F241E26D51CD5002BD21A /* Project object */;
 }
