@@ -4,10 +4,12 @@ Encontrei esse design de [aplicativo de blog](https://dribbble.com/shots/5834160
 ## Screenshots
 <p align="center">
     <img src="https://user-images.githubusercontent.com/16376748/131045550-ea6e3ec8-177d-4e2f-8ef0-d63c413c3b72.png" width="400">
+    <img src="https://user-images.githubusercontent.com/16376748/131228452-a3e953af-efca-4daf-9814-4e6f731fc261.png" width="400">
 </p>
 
 ## Vídeos
-- [Vídeo no Youtube](https://youtu.be/DcyCUUodw1Y)
+- [Vídeo no Youtube - HomeView](https://youtu.be/DcyCUUodw1Y)
+- [Vídeo no Youtube - CategoriesView](https://youtu.be/hV6TV8w_ALU)
 
 ## Requisitos
 - iOS 14

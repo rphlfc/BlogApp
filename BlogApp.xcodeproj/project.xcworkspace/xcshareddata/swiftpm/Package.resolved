@@ -9,6 +9,15 @@
           "revision": "523f5ab8c7040dd1a98c3c1f671afa1271729641",
           "version": null
         }
+      },
+      {
+        "package": "TapToCenterTabBar",
+        "repositoryURL": "git@github.com:rphlfc/TapToCenterTabBar.git",
+        "state": {
+          "branch": "main",
+          "revision": "bcd4b6f3967c5d34115fb1189f65f2553cb1d638",
+          "version": null
+        }
       }
     ]
   },

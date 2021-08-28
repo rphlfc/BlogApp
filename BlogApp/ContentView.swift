@@ -6,46 +6,27 @@
 //
 
 import SwiftUI
-import HideableTopView
-
-// let me know in the comments if you guys want a video about
-// the HideableTopView, how to build it, etc
-
-// that's it =) hope you guys liked it
 
 struct ContentView: View {
     @State var selectedIndex = 0
     
     var body: some View {
         ZStack(alignment: .bottom) {
-            HideableTopView {
-                ZStack {
-                    HStack {
-                        Button(action: {}, label: {
-                            Image(systemName: "line.horizontal.3")
-                        })
-                        
-                        Spacer()
-                        
-                        Button(action: {}, label: {
-                            Image(systemName: "magnifyingglass")
-                        })
-                    }
-                    .font(.system(size: 21))
-                    
-                    Text("Discover")
-                        .font(.system(size: 28, weight: .semibold, design: .serif))
-                }
-                .padding()
-            } content: {
-                VStack(spacing: 15) {
-                    ForEach(posts) { post in
-                        RowView(post: post)
-                    }
-                }
-                .padding(.vertical)
-                .background(Color("background"))
-                .padding(.bottom, 40)
+            TabView(selection: $selectedIndex) {
+                HomeView()
+                    .tag(0)
+                
+                CategoriesView()
+                    .tag(1)
+                
+                Text("Favorites")
+                    .tag(2)
+                
+                Text("People")
+                    .tag(3)
+                
+                Text("Settings")
+                    .tag(4)
             }
             
             // bottom menu bar

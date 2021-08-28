@@ -14,6 +14,10 @@
 		3D72F45526D846C0006E98BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D72F45426D846C0006E98BD /* ContentView.swift */; };
 		3D72F45826D849B7006E98BD /* HideableTopView in Frameworks */ = {isa = PBXBuildFile; productRef = 3D72F45726D849B7006E98BD /* HideableTopView */; };
 		3D72F45A26D8504E006E98BD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3D72F45926D8504E006E98BD /* README.md */; };
+		3DD8C9E126DABEF200543B2B /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD8C9E026DABEF200543B2B /* TitleView.swift */; };
+		3DD8C9E326DABF1200543B2B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD8C9E226DABF1200543B2B /* HomeView.swift */; };
+		3DD8C9E526DABF1B00543B2B /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD8C9E426DABF1B00543B2B /* CategoriesView.swift */; };
+		3DD8C9E826DABFD200543B2B /* TapToCenterTabBar in Frameworks */ = {isa = PBXBuildFile; productRef = 3DD8C9E726DABFD200543B2B /* TapToCenterTabBar */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,9 @@
 		3D2FF70026D562A900011CC1 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		3D72F45426D846C0006E98BD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3D72F45926D8504E006E98BD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3DD8C9E026DABEF200543B2B /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		3DD8C9E226DABF1200543B2B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3DD8C9E426DABF1B00543B2B /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DD8C9E826DABFD200543B2B /* TapToCenterTabBar in Frameworks */,
 				3D72F45826D849B7006E98BD /* HideableTopView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,6 +67,7 @@
 		3D2F242826D51CD5002BD21A /* BlogApp */ = {
 			isa = PBXGroup;
 			children = (
+				3DD8C9DF26DABEE800543B2B /* View */,
 				3D2FF6FF26D5629800011CC1 /* Model */,
 				3D2F242926D51CD5002BD21A /* BlogAppApp.swift */,
 				3D72F45426D846C0006E98BD /* ContentView.swift */,
@@ -85,6 +94,16 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		3DD8C9DF26DABEE800543B2B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3DD8C9E026DABEF200543B2B /* TitleView.swift */,
+				3DD8C9E226DABF1200543B2B /* HomeView.swift */,
+				3DD8C9E426DABF1B00543B2B /* CategoriesView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,6 +122,7 @@
 			name = BlogApp;
 			packageProductDependencies = (
 				3D72F45726D849B7006E98BD /* HideableTopView */,
+				3DD8C9E726DABFD200543B2B /* TapToCenterTabBar */,
 			);
 			productName = BlogApp;
 			productReference = 3D2F242626D51CD5002BD21A /* BlogApp.app */;
@@ -133,6 +153,7 @@
 			mainGroup = 3D2F241D26D51CD5002BD21A;
 			packageReferences = (
 				3D72F45626D849B7006E98BD /* XCRemoteSwiftPackageReference "HideableTopView" */,
+				3DD8C9E626DABFD200543B2B /* XCRemoteSwiftPackageReference "TapToCenterTabBar" */,
 			);
 			productRefGroup = 3D2F242726D51CD5002BD21A /* Products */;
 			projectDirPath = "";
@@ -163,7 +184,10 @@
 			files = (
 				3D2FF70126D562A900011CC1 /* Post.swift in Sources */,
 				3D72F45526D846C0006E98BD /* ContentView.swift in Sources */,
+				3DD8C9E526DABF1B00543B2B /* CategoriesView.swift in Sources */,
 				3D2F242A26D51CD5002BD21A /* BlogAppApp.swift in Sources */,
+				3DD8C9E326DABF1200543B2B /* HomeView.swift in Sources */,
+				3DD8C9E126DABEF200543B2B /* TitleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +384,14 @@
 				kind = branch;
 			};
 		};
+		3DD8C9E626DABFD200543B2B /* XCRemoteSwiftPackageReference "TapToCenterTabBar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:rphlfc/TapToCenterTabBar.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -367,6 +399,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3D72F45626D849B7006E98BD /* XCRemoteSwiftPackageReference "HideableTopView" */;
 			productName = HideableTopView;
+		};
+		3DD8C9E726DABFD200543B2B /* TapToCenterTabBar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DD8C9E626DABFD200543B2B /* XCRemoteSwiftPackageReference "TapToCenterTabBar" */;
+			productName = TapToCenterTabBar;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
